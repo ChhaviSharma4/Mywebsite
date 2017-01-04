@@ -63,9 +63,7 @@ html, body {
 body {
 
 
-background: #C9FFBF; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #C9FFBF , #FFAFBD); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #C9FFBF , #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #000000; /* fallback for old browsers *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
           text-transform: uppercase;
   margin: 0;
 }
@@ -86,3 +84,84 @@ svg {
   vertical-align: center;
   font-family: 'Chewy', cursive;
 }
+
+figure {
+  padding: 10px 20px 20px 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.la{
+  height: 250px;
+  width:250px;
+   border: 10px solid #f0f0f5;
+}
+
+ li {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  background-color: #00;
+}
+
+.pwe{
+  color: white;
+  text-align: left;
+  float: left;
+}
+.la:hover{
+border-color:#f0f0f5;
+}
+
+ figure {
+  margin: 0;
+  position: relative;
+}
+
+figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+figcaption {
+  bottom: 0;
+  left: 0;
+  padding: 2px;
+  background: #f0f0f5;
+  color: #00000;
+}
+
+.la {visibility:hidden;}
+  .la {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 2s;
+      -webkit-animation-duration: 2s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 1;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  

@@ -1,12 +1,13 @@
  /* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
+    height: 50%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 0;
+    top: 25%;
+
     left: 0px;
-    background-color: #111; /* Black*/
+    background-color: black; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -29,12 +30,12 @@
 }
 
 .handle{
-    font-size: 32px;
+    vertical-align: center;
+    font-size: 64px;
     color:#660033;
     cursor: pointer;
-    position: fixed;
-    margin-left: 12px;
-    margin-top: 22px;
+    position: absolute;
+    margin-top: 50%;
 }
 
 .handle:hover{

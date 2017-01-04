@@ -1,0 +1,11 @@
+html, body{
+    height:100%;
+}
+
+body{
+    background-color:black;
+    background-image:url(hole1.png);
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    cursor:crosshair;
+}

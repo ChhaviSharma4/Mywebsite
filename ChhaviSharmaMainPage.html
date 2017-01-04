@@ -22,10 +22,10 @@
 		<a href="#panel1">Home</a>
 
 		<input type="radio" name="radio-set" id="control-2"/>
-		<a href="#panel2">Education</a>
+		<a href="#panel2">Skills</a>
 
 		<input type="radio" name="radio-set" id="control-3"/>
-		<a href="#panel3">Skills & Projects</a>
+		<a href="#panel3">Projects</a>
 
 		<input type="radio" name="radio-set" id="control-4"/>
 		<a href="#contacts.html">Contact</a>
@@ -33,31 +33,198 @@
 
 		<div class = st-scroll>
 			<section class="st-panel" id="panel1">
-				<div class="first"></div>
-						<span class="handle" onclick="openNav()"><span class="glyphicon glyphicon-menu-hamburger"></span>Hobbies</span>
-
-				<br>
+			<div class="col-md-6" style="background-color:white">
 				<center>
-					<br><br>
-				<h1>Hi !!</h1>
-				 <br><img src="minion.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"></p>
-				 <div class="jumbotron">
-				 	<h1>Chhavi Sharma</h1><p>I am a third year IT student in Delhi Technological University.I am passionate about Competitive coding and web development.My other interests lie in android development,algorithms and data structures.After college, I indulge in various activities and socities like dance, basketball etc.<p>When not studying, I like to take a break by playing guitar or sketching. A voracious reader , thrillers and mysteries are my favouite genres.I also love travelling and exploring new places to eat :D</p>
-				 </div>    
-				</center>				
-					
+
+				<span class="handle" onmouseover="openNav()" onmouseout="closenav()"><span class="glyphicon glyphicon-menu-hamburger"></span>Hobbies</span>
+
 					<div id="mySidenav" class="sidenav">
 				 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				  		<a href="guitar.html"><span class="glyphicon glyphicon-music"></span>Music</a>
 				  		<a href="sketch.html"><span class="glyphicon glyphicon-pencil"></span>Sketching</a>
 				  		<a href="novel.html"><span class="glyphicon glyphicon-book"></span>Novels</a>
 				  		<a href="slider.html"><span class="glyphicon glyphicon-heart"></span>Activities</a>
-					</div>					
+					</div>	
+					</center>	
+			</div>
+			
+			<div class="col-md-6 panel" id="lala">
+				<h1 style="color:black">Welcome to this web page. My name is Chhavi Sharma and I am a third year IT student in DTU.</h1>
+			</div>
+					
+		    		
+				<div class="first"></div>
+
+								
+			</section>
+					<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+					<script>
+				    $(document).ready(function() {
+				        $('.panel').mousemove(function(e){
+				            $('.panel').css('background-position',(e.pageX - 1040)+'px '+(e.pageY - 140)+'px');
+				        });
+				    });
+				    </script>
+
+			<section class="st-panel" id="panel2">
+				<div class="second"><br><br>
+									<h1 class="cap">Skills</h1>
+					<br>
+				<ul class="grid cs-style-4">
+					<li style="background:#f0f0f5">
+						<figure>
+							<div>
+							<img src="3.png" alt = "img1">
+							<figcaption>
+								<h3>
+									HTML, CSS, JS
+								</h3>
+									<span>Front-End Web Development</span>
+									<a href="www.google.com">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+					<li style="background:#f0f0f5">
+						<figure>
+							<div>
+							<img src="jquery.png" alt = "img1">
+							<figcaption>
+								<h3>
+									JQuery
+								</h3>
+									<span>Write less, Do more</span>
+									<a href="">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+					<li style="background:#f0f0f5">
+						<figure>
+							<div>
+							<img src="angular.png" alt = "img1">
+							<figcaption>
+								<h3>
+									Angular JS
+								</h3>
+									<span></span>
+									<a href="https://docs.angularjs.org/guide/introduction">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+					<li style="background:#f0f0f5">
+						<figure>
+							<div>
+							<img src="bootstrap.png" alt = "img1">
+							<figcaption>
+								<h3>
+									Bootstrap
+								</h3>
+									<span></span>
+									<a href="http://getbootstrap.com/">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+					<li style="background:#f0f0f5">
+						<figure>
+							<div>
+							<img src="android.png" alt = "img1">
+							<figcaption>
+								<h3>
+									Android Development
+								</h3>
+									<span>Build android apps</span>
+									<a href="https://www.android.com/">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+					<br><br>
+					<li>
+						<figure>
+							<div>
+							<img src="sql.png" alt = "img1">
+							<figcaption>
+								<h3>
+									SQL
+								</h3>
+									<span>Structured Query Language</span>
+									<a href="https://www.mysql.com/">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+							<img src="cpp.png" alt = "img1">
+							<figcaption>
+								<h3>
+									C++
+								</h3>
+									<span>Programming Language</span>
+									<a href="https://en.wikipedia.org/wiki/C%2B%2B">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+							<img src="python.jpeg" alt = "img1">
+							<figcaption>
+								<h3>
+									Python
+								</h3>
+									<span>Python for Machine Learning</span>
+									<a href="https://docs.python.org/">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+							<img src="git.png" alt = "img1">
+							<figcaption>
+								<h3>
+									GIT
+								</h3>
+									<span>Version Control System</span>
+									<a href="https://git-scm.com/">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+					<li>
+						<figure>
+							<div>
+							<img src="linux.png" alt = "img1">
+							<figcaption>
+								<h3>
+									Linux
+								</h3>
+									<span>Operating System (Ubuntu)</span>
+									<a href="www.linux.org/">click here</a>
+								</figcaption>
+							</div>
+							</figure>
+					</li>
+				</ul>
+				
+				<br>
+				
+			</div>
 			</section>
 
 
-			<section class="st-panel" id="panel2">
-				<div class="second">
+			
+			<section class="st-panel" id="panel3">
+				<div class="third"></div>
+
 				<center><h1 class="cap" style="color:#99ffff;"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Educational Qualifications</h1></center>
 				<br>
 				<div class="abc"><img src="dtu.png" style="float:left;"> <b><u><center>Delhi Technological University(formerly DCE)</center></u><br>
@@ -78,111 +245,7 @@
 						<div class="panel-heading">Olympiad Gold Medalist</div>
 					</div></div></center>
 				</div>
-			</div>
-			</section>
 
-
-			
-			<section class="st-panel" id="panel3">
-				<div class="third"></div>
-				<h1 class="cap">Skills</h1>
-				
-				<div class="row">
-					<div class="col-md-1">
-						 <div class="card">
-						  <img src="html.png" alt="Avatar" style="width:100%;height:100%;">
-						  <div class="container">
-						    <h4><b>HTML 5</b></h4>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-1">
-						 <div class="card">
-						  <img src="css.png" alt="Avatar" style="width:100%;height:130px;">
-						  <div class="container">
-						    <h4><b>CSS 3</b></h4>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-1">
-						 <div class="card">
-						  <img src="js.png" alt="Avatar" style="width:100% ;height:100%;">
-						  <div class="container">
-						    <h4><b>JAVASCRIPT</b></h4>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-1">
-						 <div class="card">
-						  <img src="angular.png" alt="Avatar" style="width:100%;height:100%;">
-						  <div class="container">
-						    <h4><b>AngularJS</b></h4>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-1">
-						 <div class="card">
-						  <img src="jquery.png" alt="Avatar" style="width:100%;height:100%;">
-						  <div class="container">
-						    <h4><b>Jquery</b></h4>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-1">
-						 <div class="card">
-						  <img src="bootstrap.png" alt="Avatar" style="width:100%;height:100%;">
-						  <div class="container">
-						    <h4><b>BOOTSTRAP</b></h4>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-1">
-						 <div class="card">
-						  <img src="cpp.png" alt="Avatar" style="width:100%;height:100%;">
-						  <div class="container">
-						    <h4><b>C++</b></h4>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-1">
-						 <div class="card">
-						  <img src="android.png" alt="Avatar" style="width:100%;height:120px;">
-						  <div class="container">
-						    <h4><b>Android <BR>Development</b></h4>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-1">
-						 <div class="card">
-						  <img src="sql.png" alt="Avatar" style="width:100%;height:100%;">
-						  <div class="container">
-						    <h4><b>SQL</b></h4>
-						  </div>
-						</div>
-					</div>
-					
-				</div>
-				<br>
-
-				<hr>
-				<div class="row">
-					<center >
-					<h1 class="cap">Achievements</h1>
-					</center>
-					<dl>
-						<dt>Won a Hackathon:</dt>
-						<dd>Developed an android app-"Sabzi Mandi" which shows availibility and fetches the live prices of commodities from the selected mandi. It also depicts trends in sales of a product over a period of time.</dd>
-						<dt>App for DTU Hostel Mess:</dt>
-						<dd>Built an android app for all the hostellers so that the students can keep a track of their mess bill, items purchased and also pay bill via the app</dd>
-						<dt>DS - Content writer:</dt>
-						<dd>Explained and coded for commonly asked questions on data structures such as Binary Search Trees for an online portal.</dd>
-						<dt>Virtual Reality - Oculus Rift:</dt>
-						<dd>Did a project on the working of virtual reality glasses like oculus rift.</dd>
-						<dt>Front End Web Development</dt>
-						<dd>Did an internship in a startup 'Fable' and built a web app with AngularJS.</dd>
-
-					</dl>
-				</div>
 			</section>
 
 

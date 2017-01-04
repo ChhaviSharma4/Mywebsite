@@ -148,9 +148,16 @@ body{
 }
 
 #panel1{
-background: #00C9FF; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #00C9FF , #92FE9D); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #00C9FF , #92FE9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #ffffff; /* fallback for old browsers */
+}
+
+.panel{    
+	height:100%;
+    background-color:black;
+    background-image:url(hole1.png);
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    cursor:crosshair;
 }
 
 .first{
@@ -186,10 +193,7 @@ background: linear-gradient(to left, #00C9FF , #92FE9D); /* W3C, IE 10+/ Edge, F
 #panel2{
 
 
-background: #f857a6; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #f857a6 , #ff5858); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #f857a6 , #ff5858); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+background: #e0e0eb;
 }
 
 #panel3{
@@ -249,11 +253,106 @@ img {
 .cap{
 	text-align: center;
 	font-family: 'Spicy Rice', cursive;
-	font-size: 54px;
-	color: #ff0066;
+	font-size: 94px;
+	color: #ff1a8c;
 	text-shadow: 2px 2px 4px #000000;
 }
 
+.grid {
+	padding: 10px 20px 20px 10px;
+	max-width: 100%;
+	margin: 0 auto;
+	list-style: none;
+}
+
+.grid li {
+	display: inline-block;
+	width: 350px;
+	margin: 0;
+	padding: 25px;
+	text-align: left;
+	position: relative;
+	background-color: #f0f0f5;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+}
+
+
+
+
+.cs-style-4 li {
+	perspective: 1700px;
+	perspective-origin: 0 50%;
+}
+.cs-style-4 figure {
+	transform-style: preserve-3d;
+}
+.cs-style-4 figure > div {
+	overflow: hidden;
+}
+.cs-style-4 figure img {
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-4 figure:hover img,
+.cs-style-4 figure.cs-hover img {
+	transform: translateX(25%);
+}
+
+.cs-style-4 figcaption {
+	height: 100%;
+	width: 50%;
+	opacity: 0;
+	backface-visibility: hidden;
+	transform-origin: 0 0;
+	transform: rotateY(-90deg);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+.no-touch .cs-style-4 figure:hover figcaption,
+.cs-style-4 figure.cs-hover figcaption {
+	opacity: 1;
+	transform: rotateY(0deg);
+	transition: transform 0.4s, opacity 0.1s;
+}
+.cs-style-4 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
 dt{
 	margin-left: 20px;
 	font-size: 35px;
