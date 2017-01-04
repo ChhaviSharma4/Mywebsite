@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+
+	<link rel="stylesheet" type="text/css" href="contacts.css">
+	<link rel="stylesheet" type="text/css" href="circularNav.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<center><h1>CONTACT</h1></center>
+		<br><br>
+	<!-- <form action="MAILTO:sharma.chhavi96@gmail.com" method="POST" enctype="plain/text"> -->
+	<div class="col-md-4 left">
+		<!-- <fieldset>
+			<legend>PERSONAL-DETAILS</legend>
+		 --><span class="glyphicon glyphicon-map-marker"></span>Delhi, India<br>
+		<span class="glyphicon glyphicon-link"></span>https://github.com/ChhaviSharma4<br>
+		<span class="glyphicon glyphicon-envelope"></span>sharma.chhavi96@gmail.com<br>
+<!-- 		</fieldset>
+ -->	</div>
+
+    <div class="col-md-8">
+    	<div class="row">
+    		<div class="col-md-6"><input type="text" class="form-control" id="name" placeholder="Name" name="name" required></div>
+    		<div class="col-md-6"><input type="email" class="form-control" id="email" placeholder="E-mail" name="email" required></div>
+    	</div>
+    	<br><br>
+    	<div class="row">
+    		<textarea class="form-control" id="comments" name="comments" placeholder="Comments" rows="5"></textarea>
+    	</div>
+    	<br>
+    	<div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn btn-primary btn-lg pull-right" type="submit">Send</button>
+        </div>
+      	</div>
+    </div>
+
+		<!-- map data -->
+		<div id="googleMap"></div>
+		
+		<div class="component">
+		<!-- Start Nav Structure -->
+				<button class="cn-button" id="cn-button">+</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+				    <ul>
+				      <li><a href="#"><span class="icon-picture"></span></a></li>
+				      <li><a href="#"><span class="icon-headphones"></span></a></li>
+				      <li><a href="#"><span class="icon-home"></span></a></li>
+				      <li><a href="#"><span class="icon-facetime-video"></span></a></li>
+				      <li><a href="#"><span class="icon-envelope-alt"></span></a></li>
+				     </ul>
+				</div>
+				<div id="cn-overlay" class="cn-overlay"></div>
+				<!-- End Nav Structure -->
+		</div>
+
+	</div>
+	 	<script src="modernizr-2.6.2.min.js"></script>
+		<script src="cicularNav.js"></script>
+		<script type="text/javascript" src="polyfills.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	  	<script type="text/javascript" src="maps.js"></script>
+</body>
+</html>

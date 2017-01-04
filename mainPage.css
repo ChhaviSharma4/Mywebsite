@@ -1,0 +1,268 @@
+body{
+	overflow:hidden;
+}
+
+.st-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: Arial, sans-serif;
+}
+.abc{
+	background-color: #f2f2f2;
+	border-width: 18px;
+	border-color: #cc00cc;
+	outline-color: #660066;
+	outline-style: ridge;
+	outline-width: 8px;
+	width: 85%;
+	font-size: 30px;
+	color: black;
+	float: left;
+	margin-left: 40px;
+	padding: 10px 10px 10px 10px;
+	margin-top: 20px;
+}
+
+.st-container>input,
+.st-container>a{
+	position: fixed;
+	bottom: 0px;
+	width: 25%;
+	height: 34px;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 34px;
+	text-align: center;
+	text-decoration: none;
+	border-right:2px solid white;
+
+}
+
+.st-container>input{
+	z-index: 100;
+	opacity: 0;
+}
+
+.st-container>a{
+	z-index: 10;
+	background: #660033;
+	color: white;
+
+}
+
+.st-container : before{
+	content: '';
+	position: fixed;
+	width: 25%;
+	height: 34px;
+	background: #660033;
+	/*same as .st-container*/
+	z-index: 9;
+	bottom: 0;
+}
+
+#control-1 ,#control-1 + a{
+	left: 0;
+}
+
+#control-2, #control-2 +a {
+	left: 25%;
+}
+
+#control-3 ,#control-3 + a{
+	left: 50%;
+}
+
+#control-4, #control-4 +a {
+	left: 75%;
+}
+
+
+.st-container > input:checked + a:after,
+.st-container > input:checked:hover + a:after{
+	bottom: 100%;
+	border: solid transparent;
+	content: '';
+	height:0px;
+	width: 0px;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #660033;
+	border-width: 20px;
+	left: 50%;
+	margin-left: -20px;
+	text-decoration: underline;
+
+}
+
+.st-container > input:hover + a{
+	background:#ff0066;
+	color:#ffffff;
+	text-decoration: underline;
+
+}
+
+.st-container > input:hover + a:after {
+	border-bottom-color: #ff0066;
+}
+
+.st-scroll,
+.st-panel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.st-scroll {
+	top: 0;
+	left: 0;
+	transition: all 0.6s ease-in-out;
+	
+	/* Let's enforce some hardware acceleration */
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
+
+.st-panel{
+	background: #c5a3ff;
+	overflow: hidden;
+} 
+
+#control-1:checked ~.st-scroll{
+	transform: translateY(0%);
+}
+
+#control-2:checked ~.st-scroll{
+	transform: translateY(-100%);
+}
+
+#control-3:checked ~.st-scroll{
+	transform: translateY(-200%);
+}
+
+#control-4:checked ~.st-scroll{
+	transform: translateY(-300%);
+}
+
+#panel1{
+background: #00C9FF; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #00C9FF , #92FE9D); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #00C9FF , #92FE9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.first{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -50px;
+	background: #660033;
+	transform: translateY(-50%) rotate(45deg);
+}
+
+/* #panel4{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 2;
+}
+
+#panel4 .on-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+*/
+#panel2{
+
+
+background: #f857a6; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #f857a6 , #ff5858); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #f857a6 , #ff5858); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+#panel3{
+	background: #fc00ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #fc00ff , #00dbde); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #fc00ff , #00dbde); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+hr { 
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-color:#000;
+    outline-color: #ffff00;
+    border-width: 5px;
+} 
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background: white;
+}
+
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+    height: 250px;
+    width: 250px;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.panel4{
+	background: grey;
+	opacity: 0.9;
+	pointer-events:auto;
+	z-index: 2;
+}
+
+.panel4 .on-overlay {
+  opacity: 0.5;
+  background: grey;
+}
+
+.cap{
+	text-align: center;
+	font-family: 'Spicy Rice', cursive;
+	font-size: 54px;
+	color: #ff0066;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+dt{
+	margin-left: 20px;
+	font-size: 35px;
+	color: #ff0000;
+	text-decoration: underline;
+}
+dd{
+	margin-right: 10px;
+	margin-left: 20px;
+	font-size: 30px;
+	color: #800000;
+}

@@ -1,0 +1,17 @@
+.container-fluid{
+
+background-color: #000;
+}
+
+img{
+transform:scale(0.7);
+border-width: 15px;
+border-style: solid;
+border-color: #fff;
+
+}
+
+li{
+	overflow: hidden;
+	display: inline-block;
+}
